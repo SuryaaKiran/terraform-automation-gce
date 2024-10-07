@@ -16,7 +16,8 @@ pipeline {
                     env.PATH = "${tfHome}:${env.PATH}"
                 }
                 sh 'echo $SVC_ACCOUNT_KEY | base64 -d > ./terraform.json'
-                sh 'terraform --version'               
+                sh 'terraform --version' 
+		sh 'pwd'
                
             }
         }
