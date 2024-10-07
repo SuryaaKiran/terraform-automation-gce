@@ -18,6 +18,7 @@ pipeline {
                 sh 'echo $SVC_ACCOUNT_KEY | base64 -d > ./terraform.json'
                 sh 'terraform --version' 
 		sh 'pwd'
+		sh 'gcloud config list'
                
             }
         }
