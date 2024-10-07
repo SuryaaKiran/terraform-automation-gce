@@ -2,6 +2,7 @@ provider "google" {
   project     = "project1-435917"
   region      = "us-central1"
   zone        = "us-central1-a"
+  credentials = file("terraform.json")
 }
 
 resource "google_compute_instance" "default" {
